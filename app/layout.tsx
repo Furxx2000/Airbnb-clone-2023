@@ -7,6 +7,7 @@ import getCurrentUser from './actions/getCurrentUser';
 import RegisterModal from './components/modals/RegisterModal';
 import LoginModal from './components/modals/LoginModal';
 import RentModal from './components/modals/RentModal';
+import SearchModal from './components/modals/SearchModal';
 
 export const metadata = {
   title: 'Airbnb 2023',
@@ -28,6 +29,7 @@ export default async function RootLayout({
     <html lang='en'>
       <body className={font.className}>
         <ToasterProvider />
+        <SearchModal />
         <RentModal />
         <LoginModal />
         <RegisterModal />
