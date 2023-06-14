@@ -1,3 +1,5 @@
+export const dynamic = 'force-static';
+
 import getCurrentUser from './actions/getCurrentUser';
 import getListings, { IListingParams } from './actions/getListing';
 import Container from './components/Container';
