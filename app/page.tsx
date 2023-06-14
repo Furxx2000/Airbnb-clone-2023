@@ -1,4 +1,4 @@
-export const dynamic = 'force-static';
+export const dynamic = 'auto';
 
 import getCurrentUser from './actions/getCurrentUser';
 import getListings, { IListingParams } from './actions/getListing';
