@@ -1,3 +1,4 @@
+export const dynamic = 'force-static';
 import Container from '@/app/components/Container';
 import ListingCard from '@/app/components/listings/ListingCard';
 import EmptyState from '@/app/components/EmptyState';
@@ -8,8 +9,6 @@ import getCurrentUser from '@/app/actions/getCurrentUser';
 interface HomeProps {
   searchParams: IListingParams;
 }
-
-export const dynamic = 'force-static';
 
 const Home = async ({ searchParams }: HomeProps) => {
   const listings = await getListings(searchParams);
